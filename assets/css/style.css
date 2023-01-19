@@ -1,0 +1,125 @@
+#hero {
+  background: url("../img/hero-banner.png"), rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sub-title {
+  color: #f4cb08;
+  font-size: 24px;
+  font-weight: 400;
+}
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  position: relative;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #f4cb08;
+  left: 0;
+  top: 80px;
+}
+.details {
+  padding: 40px 260px 0 0;
+}
+.portfolio {
+  background: #f4cb08;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 30px;
+}
+.portfolio:hover {
+  background: #dcb707;
+}
+.about {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border: 2px solid white;
+  margin-left: 20px;
+}
+.about:hover {
+  color: black !important;
+  background: white;
+}
+@media screen and (max-width: 992px) {
+  .title::after {
+    top: 122px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img-fluid {
+    width: 50%;
+  }
+  .people {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .hero-btn {
+    margin-bottom: 4rem;
+  }
+  .title::after {
+    top: 90px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .img-fluid {
+    width: 50%;
+  }
+  .people {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .sub-title {
+    font-size: 23px;
+  }
+  .title {
+    font-size: 35px;
+    margin-bottom: 34px;
+  }
+  .details {
+    font-size: 19px;
+    padding: 0px;
+  }
+  .title::after {
+    top: 60px;
+  }
+  .hero-btn {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .details {
+    font-size: 18px;
+    padding: 0px;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .portfolio {
+    font-size: 12px;
+    width: 100%;
+  }
+  .about {
+    font-size: 12px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 9px;
+  }
+  .people {
+    display: none;
+  }
+  #hero {
+    height: 33rem;
+  }
+  .title::after {
+    top: 90px;
+  }
+}
